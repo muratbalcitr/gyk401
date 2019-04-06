@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.VKI_fragment">
+
+
+    <EditText
+        android:id="@+id/etBoy"
+        style="@android:style/Widget.Material.Light.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/et_custom"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:hint="boyunuzu giriniz"
+        android:inputType="number"
+        android:selectAllOnFocus="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintBottom_toTopOf="@+id/etKilo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <EditText
+        android:id="@+id/etKilo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/et_custom"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:hint="kilonuzu giriniz"
+        android:inputType="number"
+        android:selectAllOnFocus="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        app:layout_constraintBottom_toTopOf="@+id/btnHesapla"
+        app:layout_constraintEnd_toEndOf="@+id/etBoy"
+        app:layout_constraintStart_toStartOf="@+id/etBoy"
+        app:layout_constraintTop_toBottomOf="@+id/etBoy" />
+
+    <Button
+        android:id="@+id/btnHesapla"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="24dp"
+        android:text="Hesapla"
+        app:layout_constraintEnd_toEndOf="@+id/etKilo"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="@+id/etKilo"
+        app:layout_constraintTop_toBottomOf="@+id/etKilo" />
+
+    <TextView
+        android:id="@+id/tvSonuc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/btnHesapla"
+        app:layout_constraintStart_toStartOf="@+id/btnHesapla"
+        app:layout_constraintTop_toBottomOf="@+id/btnHesapla" />
+</android.support.constraint.ConstraintLayout>
