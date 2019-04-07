@@ -9,7 +9,8 @@
     <string name="yemek_Tarifleri">Yemek Tarifleri</string>
     <string name="yemek_listesi">Yemek Listesi</string>
     <string name="vki">VKI Hesaplama</string>
-
+    <string name="sehirler">Şehirler</string>
+    <string name="cats">Kediler</string>
 
 
 </resources>

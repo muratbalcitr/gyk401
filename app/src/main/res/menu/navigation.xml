@@ -15,6 +15,12 @@
         android:id="@+id/navigation_yemek_tarifleri"
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="@string/yemek_Tarifleri" />
-
-
+    <item
+        android:id="@+id/navigation_sehirler"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/sehirler" />
+    <item
+        android:id="@+id/navigation_cats"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/cats" />
 </menu>

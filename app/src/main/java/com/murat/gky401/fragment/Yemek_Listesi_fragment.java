@@ -25,6 +25,8 @@ public class Yemek_Listesi_fragment extends Fragment {
 
     private List<YemekList_Model> yemekList_models;
     private RecyclerView rlcYemekList;
+    private YemekList_Adapter yemekList_adapter;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,18 +52,8 @@ public class Yemek_Listesi_fragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         rlcYemekList = view.findViewById(R.id.rlcYemekList);
-        recList();
-    }
-
-    YemekList_Adapter yemekList_adapter;
-
-    private void recList() {
-        if (yemekList_models.size() > 0)
-            yemekList_adapter = new YemekList_Adapter(yemekList_models);
-        RecyclerView.LayoutManager manager = new LinearLayoutManager(getActivity());
-        rlcYemekList.setLayoutManager(manager);
-        rlcYemekList.addItemDecoration(new DividerItemDecoration(getContext(), 1));
-        rlcYemekList.setItemAnimator(new DefaultItemAnimator());
+        yemekList_adapter = new YemekList_Adapter(yemekList_models, getContext());
+        rlcYemekList.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         rlcYemekList.setAdapter(yemekList_adapter);
     }
 }

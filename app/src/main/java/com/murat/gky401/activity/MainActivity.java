@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import com.murat.gky401.R;
+import com.murat.gky401.fragment.CatFragment;
+import com.murat.gky401.fragment.SehirlerFragment;
 import com.murat.gky401.fragment.Yemek_Tarifleri_fragment;
 import com.murat.gky401.fragment.VKI_fragment;
 import com.murat.gky401.fragment.Yemek_Listesi_fragment;
@@ -68,6 +70,20 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     toolbar.setTitle("Yemek Tarifleri");
                 }
                 fragment = new Yemek_Tarifleri_fragment();
+                loadFragment(fragment);
+                return true;
+            case R.id.navigation_sehirler:
+                if (toolbar != null) {
+                    toolbar.setTitle("Şehirler");
+                }
+                fragment = new SehirlerFragment();
+                loadFragment(fragment);
+                return true;
+            case R.id.navigation_cats:
+                if (toolbar != null) {
+                    toolbar.setTitle("Kediler");
+                }
+                fragment = new CatFragment();
                 loadFragment(fragment);
                 return true;
         }
