@@ -21,9 +21,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.murat.gky401.R;
 import com.murat.gky401.adapter.CatsAdapter;
-import com.murat.gky401.adapter.SehirAdapter;
 import com.murat.gky401.model.Cat;
-import com.murat.gky401.model.Sehir;
 
 import org.json.JSONArray;
 import org.json.JSONException;
